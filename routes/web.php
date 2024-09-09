@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('outdoors.index');
+    return redirect('/home');
 });
 
 Auth::routes();
@@ -26,5 +26,5 @@ Route::view('/home', 'outdoors.index')->name('home');
 Route::view('/services', 'outdoors.services')->name('services');
 Route::view('/about', 'outdoors.about')->name('about');
 Route::view('/contact', 'outdoors.contact')->name('contact');
-Route::view('/service-datail', 'outdoors.service-detail')->name('service-detail');
+Route::view('/service-detail', 'outdoors.service-detail')->name('service-detail');
 

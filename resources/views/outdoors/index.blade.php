@@ -5,7 +5,7 @@
     <div class="containe">
         <div class="ro f-slider-one owl-carousel">
             <div class="f-slider-layer">
-                <img src="assets/images/slide1.jpeg" alt="Slider 1">
+                <img src="{{ asset('assets/images/slide1.jpeg')}}" alt="Slider 1">
                 <div class="f-slider-one-data">
                     <h1  >Experience <br> Matters</h1>
                     <br>
@@ -14,14 +14,14 @@
                 </div>
             </div>
             <div class="f-slider-layer">
-                <img src="assets/images/slide2.jpeg" alt="Project Img">
+                <img src="{{ asset('assets/images/slide2.jpeg')}}" alt="Project Img">
                 <div class="f-slider-one-data">
                     <h1>A Better Way To Build Your Dreams</h1>
                     <a href="{{route('contact')}}"  class="theme-btn">Contact us <i class="fa-solid fa-angles-right"></i></a>
                 </div>
             </div>
             <div class="f-slider-layer">
-                <img src="assets/images/slide3.jpeg" alt="Project Img 2">
+                <img src="{{ asset('assets/images/slide3.jpeg')}}" alt="Project Img 2">
                 <div class="f-slider-one-data">
                     <h1>Build Innovative & Industrial Solutions</h1>
                     <a href="{{route('contact')}}"  class="theme-btn">Contact us <i class="fa-solid fa-angles-right"></i></a>
@@ -40,80 +40,80 @@
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/house_light.png" alt="Icon">
-                        <img class="dark-icon" src="assets/images/house_dark.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/house_light.png')}}" alt="Icon">
+                        <img class="dark-icon" src="{{ asset('assets/images/house_dark.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">NEW CONSTRUCTION ADDITIONS</a></h3>
+                    <h3><a href="  ">NEW CONSTRUCTION ADDITIONS</a></h3>
                     <p>Do you need extra space? a room or simply make some changes so that the space you enjoy so much becomes perfect? Do you need a place to store your tools? Tell us what needs to be added, modified or created... together we can do it.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/roofing_light.png" >
-                        <img class="dark-icon" src="assets/images/roofing_dark.png">
+                        <img class="light-icon" src="{{ asset('assets/images/roofing_light.png')}}" >
+                        <img class="dark-icon" src="{{ asset('assets/images/roofing_dark.png')}}">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">ROOFING</a></h3>
+                    <h3><a href="  ">ROOFING</a></h3>
                     <p>The roof is one of the main and most important structures of your home, take action and protect your assets, if it is time to replace the roof of your home, or make a repair... count on us.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/paiting_light.png" alt="Icon">
-                        <img class="dark-icon" src="assets/images/paiting_dark.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/paiting_light.png')}}" alt="Icon">
+                        <img class="dark-icon" src="{{ asset('assets/images/paiting_dark.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">PAINTING</a></h3>
+                    <h3><a href="  ">PAINTING</a></h3>
                     <p>You need to make some changes, a fresher color... a combination or a new design came to your mind and you are ready to carry it out, we can give that change to your house or project.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/deck_light.png" alt="Icon">
-                        <img class="dark-icon" src="assets/images/deck_dark.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/deck_light.png')}}" alt="Icon">
+                        <img class="dark-icon" src="{{ asset('assets/images/deck_dark.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">DECK</a></h3>
+                    <h3><a href="  ">DECK</a></h3>
                     <p>Do you need a deck next to your house, a space where you can sit and relax or eat, be with your friends and enjoy pleasant moments? Let us help you make your intentions come true.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/gazebo_light.png" alt="Icon">
-                        <img class="dark-icon" src="assets/images/gazebo_dark.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/gazebo_light.png')}}" alt="Icon">
+                        <img class="dark-icon" src="{{ asset('assets/images/gazebo_dark.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">GAZEBOS</a></h3>
+                    <h3><a href="  ">GAZEBOS</a></h3>
                     <p>A gazebo is a freestanding, open garden structure, sometimes whit a specific design, with a roof. Most gazebos are constructed of wood or metal and have built-in seating inside the sheltered area.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/patio_light.png" alt="Icon">
-                        <img class="dark-icon" src="assets/images/paiting_dark.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/patio_light.png')}}" alt="Icon">
+                        <img class="dark-icon" src="{{ asset('assets/images/paiting_dark.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">PATIO COVER </a></h3>
+                    <h3><a href="  ">PATIO COVER </a></h3>
                     <p>Whether providing shade or protection from rain, a patio structure is an element that makes your outdoor space livable, no matter the weather. These moments can last as long as necessary.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/arbors_light.png" alt="Icon">
-                        <img class="dark-icon" src="assets/images/arbors_dark.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/arbors_light.png')}}" alt="Icon">
+                        <img class="dark-icon" src="{{ asset('assets/images/arbors_dark.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">ARBORS </a></h3>
+                    <h3><a href="  ">ARBORS </a></h3>
                     <p>One of the favorites of landscaping lovers is a garden alcove with shade, sides and a roof made up of trees or climbing plants on a wooden framework.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/outdoors_kitchen_light.png" alt="Icon">
-                        <img class="dark-icon" src="assets/images/outdoors_kitchen_dark.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/outdoors_kitchen_light.png')}}" alt="Icon">
+                        <img class="dark-icon" src="{{ asset('assets/images/outdoors_kitchen_dark.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">OUTDOOR KITCHEN   </a></h3>
+                    <h3><a href="  ">OUTDOOR KITCHEN   </a></h3>
                     <p>For lovers of outdoor cooking, who enjoy preparing the favorites of their family and friends, without missing a moment of fun, an outdoor kitchen will allow you to pamper yourself and your loved ones.</p>
                 </div>
             </div>
@@ -122,45 +122,45 @@
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/window.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/window.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">WINDOW AND/OR DOOR NEW INSTALLATION.     </a></h3>
+                    <h3><a href="  ">WINDOW AND/OR DOOR NEW INSTALLATION.     </a></h3>
                     <p>Enhance your home's security and style with our professional window and door installation, tailored to your needs.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/bulkhead.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/bulkhead.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">BULKHEAD REPAIRS    </a></h3>
+                    <h3><a href="  ">BULKHEAD REPAIRS    </a></h3>
                     <p>Restore your property with our bulkhead repair services. We address leaks, cracks, and structural issues to ensure long-lasting durability and prevent future problems.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/washing.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/washing.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">POWER WASHING   </a></h3>
+                    <h3><a href="  ">POWER WASHING   </a></h3>
                     <p>Revitalize your home’s exterior with our power washing service. Remove dirt, grime, and stains to restore the fresh and clean appearance of driveways, decks, and siding.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/gutter.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/gutter.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">GUTTER CLEANING   </a></h3>
+                    <h3><a href="  ">GUTTER CLEANING   </a></h3>
                     <p>Protect your home from water damage with our thorough gutter cleaning service. We clear debris and blockages to keep your gutters functioning properly and prevent overflow.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                 <div class="service-data">
                     <div class="svg-icon d-flex-all">
-                        <img class="light-icon" src="assets/images/fence.png" alt="Icon">
+                        <img class="light-icon" src="{{ asset('assets/images/fence.png')}}" alt="Icon">
                     </div>
-                    <h3><a href="{{route('service-detail')}}">NEW FENCE AND REPAIRS   </a></h3>
+                    <h3><a href="  ">NEW FENCE AND REPAIRS   </a></h3>
                     <p>Enhance your property with our new fence installation and repair services. We offer durable and stylish fencing solutions to boost both security and curb appeal.</p>
                 </div>
             </div>
@@ -178,10 +178,10 @@
             <div class="col-lg-6" >
                 <div class="about-data-left">
                     <figure>
-                        <img src="assets/images/quality1.jpeg" width="300px" height="400px">
+                        <img src="{{ asset('assets/images/quality1.jpeg')}}" width="300px" height="400px">
                     </figure>
                     <figure class="about-image">
-                        <img src="assets/images/quality2.jpeg"  width="300px" height="400px">
+                        <img src="{{ asset('assets/images/quality2.jpeg')}}"  width="300px" height="400px">
                     </figure>
                 </div>
             </div>
@@ -213,56 +213,56 @@
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project1.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project1.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project2.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project2.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project3.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project3.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project4.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project4.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project5.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project5.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project6.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project6.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project7.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project7.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="project-post">
                     <figure>
-                        <img src="assets/images/project8.jpeg" width="640px" height="395px">
+                        <img src="{{ asset('assets/images/project8.jpeg')}}" width="640px" height="395px">
                     </figure>
                 </div>
             </div>
@@ -343,7 +343,7 @@
                 <div class="shape">
                     <div class="video">
                         <figure>
-                            <img src="assets/images/working.jpeg" width="965px" height="825px">
+                            <img src="{{ asset('assets/images/working.jpeg')}}" width="965px" height="825px">
                         </figure>
                         <a class="video-play-btn" data-fancybox="" href="https://www.youtube.com/watch?v=uemObN8_dcw">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="56" viewBox="0 0 35 56"> <defs> <clipPath id="clip-video_arrow"> <rect width="35" height="56"/> </clipPath> </defs> <g id="video_arrow" data-name="video arrow" clip-path="url(#clip-video_arrow)"> <path id="Shape_1" data-name="Shape 1" d="M1362,5000.8,1327,4972V5027Z" transform="translate(-1326.998 -4971.996)" fill="rgba(0,0,0,0)"/> <path id="Shape_1_-_Outline" data-name="Shape 1 - Outline" d="M1333,5015.017l19.29-14.437L1333,4984.7v30.313M1327,5027V4972l35,28.807Z" transform="translate(-1326.998 -4971.996)"/> </g> </svg>

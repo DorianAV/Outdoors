@@ -2,7 +2,7 @@
 @section('content')
 <!-- Banner Style One Start -->
 <section class="banner-style-one">
-    <div class="parallax" style="background-image: url(assets/images/pattren-3.png);"></div>
+    <div class="parallax" style="background-image: url({{ asset('assets/images/pattren-3.png')}});"></div>
     <div class="container">
         <div class="row">
             <div class="banner-details">

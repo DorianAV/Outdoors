@@ -3,7 +3,7 @@
 
 <!-- Banner Style One Start -->
 <section class="banner-style-one">
-    <div class="parallax" style="background-image: url(assets/images/pattren-3.png);"></div>
+    <div class="parallax" style="background-image: url({{ asset('assets/images/pattren-3.png')}});"></div>
     <div class="container">
         <div class="row">
             <div class="banner-details">
@@ -51,7 +51,7 @@
                     </div>
                     <br>
                     <figure>
-                        <img class="w-100" src="assets/images/about1.jpg" alt="About Image One">
+                        <img class="w-100" src="{{ asset('assets/images/about1.jpg')}}" alt="About Image One">
                     </figure>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                             family and their needs.</p>
                     </div>
                     <figure>
-                        <img class="w-100" src="assets/images/about2.png" alt="About Image Two ">
+                        <img class="w-100" src="{{ asset('assets/images/about2.png')}}" alt="About Image Two ">
                     </figure>
                 </div>
             </div>
