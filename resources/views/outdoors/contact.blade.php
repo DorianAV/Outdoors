@@ -60,7 +60,7 @@
                         @csrf
                         @honeypot
                         <div class="row g-0">
-                            <textarea placeholder="Question / Message?" id="question" name="question"></textarea>
+                            <textarea placeholder="Question / Message?" id="question" name="question" class="form-control"> </textarea>
                         </div>
                         <div class="row g-0">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Complete Name">

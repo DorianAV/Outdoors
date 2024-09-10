@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="telephone=no" name="format-detection">
     <title>{{ $subject }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css')}}">
+
 </head>
 
 <body>
@@ -120,27 +122,20 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td align="left">
-                                                                <p> You that a new contact
-                                                                    request has been submitted through our website. </p>
-                                                                <br>
-                                                                <p style="text-align: justify"> Below are the details of
-                                                                    the request: </p>
-                                                                <ul>
+                                                            <td class="text-left">
+                                                                <p class="mb-3"> You have received a new contact request submitted through our website. </p>
+                                                                <p class="text-justify mb-3"> Below are the details of the request: </p>
+                                                                <ul class="list-unstyled">
                                                                     <li><strong>Title:</strong> {{$subject}}</li>
                                                                     <li><strong>Name:</strong> {{$name}}</li>
                                                                     <li><strong>Question:</strong> {{$question}}</li>
                                                                     <li><strong>Email:</strong> {{$email}}</li>
                                                                 </ul>
-
-                                                                Claro, aquí está el texto modificado:
-
-                                                                <p style="text-align: justify"> Here is the information
-                                                                    from the contact request. Please try to reach out to
-                                                                    the user to follow up on their inquiry. </p> <br>
+                                                                <p class="text-justify mb-3"> Here is the information from the contact request. Please try to reach out to the user to follow up on their inquiry. </p>
                                                                 <p> Best regards, </p>
                                                                 <p> The Conroe Outdoors Team </p>
                                                             </td>
+
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -180,7 +175,6 @@
                         </td>
                         <td style="width: 33%; text-align: center; vertical-align: middle; padding: 10px;">
 
-                            > Mr Orbiter:
                             <a href="https://www.youtube.com/@MiTejupilco" style="color: white; text-decoration: none;">
                                 <img
                                     src="https://eonyaow.stripocdn.email/content/assets/img/social-icons/logo-gray/youtube-logo-gray.png"

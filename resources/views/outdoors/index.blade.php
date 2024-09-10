@@ -4,29 +4,17 @@
 <section class="featured-slider-one" style="background: grey;">
     <div class="containe">
         <div class="ro f-slider-one owl-carousel">
-            <div class="f-slider-layer">
-                <img src="{{ asset('assets/images/slide1.jpeg')}}" alt="Slider 1">
-                <div class="f-slider-one-data">
-                    <h1  >Experience <br> Matters</h1>
-                    <br>
-                    <p>SERVING  CONROE, SPRING, THE WOODLANDS. AND SURROUNDINGS AREAS. </p>
-                    <a href="{{route('contact')}}"  class="theme-btn">Contact us <i class="fa-solid fa-angles-right"></i></a>
+            @foreach($titleSliders as $titleSlider)
+                <div class="f-slider-layer">
+                    <img src="{{ asset('storage').'/'.$titleSlider->image}}" alt="Slider 1">
+                    <div class="f-slider-one-data">
+                        <h1>{{$titleSlider->title}}</h1>
+                        <p>{{$titleSlider->subtitle}}</p>
+                        <a href="{{route('contact')}}"  class="theme-btn">Contact us <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="f-slider-layer">
-                <img src="{{ asset('assets/images/slide2.jpeg')}}" alt="Project Img">
-                <div class="f-slider-one-data">
-                    <h1>A Better Way To Build Your Dreams</h1>
-                    <a href="{{route('contact')}}"  class="theme-btn">Contact us <i class="fa-solid fa-angles-right"></i></a>
-                </div>
-            </div>
-            <div class="f-slider-layer">
-                <img src="{{ asset('assets/images/slide3.jpeg')}}" alt="Project Img 2">
-                <div class="f-slider-one-data">
-                    <h1>Build Innovative & Industrial Solutions</h1>
-                    <a href="{{route('contact')}}"  class="theme-btn">Contact us <i class="fa-solid fa-angles-right"></i></a>
-                </div>
-            </div>
+
+            @endforeach
 
         </div>
     </div>
@@ -41,7 +29,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 text-center" >
                     <div class="service-data">
                         <div class="svg-icon d-flex-all">
-                            <img class="light-icon" src="{{ asset('').$service->image}}" alt="Icon">
+                            <img class="light-icon" src="{{ asset('storage').'/'.$service->image}}" alt="Icon">
                         </div>
                         <h3><a href=" ">{{$service->title}}   </a></h3>
                         <p>{{$service->description}}</p>

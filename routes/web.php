@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TitleSliderController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -24,11 +25,13 @@ Route::get('/', function () {
 Auth::routes([
     'register' => false,
     'reset' => false
-    ]);
+]);
 
+Route::resource('titleSlider', TitleSliderController::class)->middleware('auth')->except('index');
 Route::resource('service', ServiceController::class)->middleware('auth')->except('index');
 Route::resource('message', MessageController::class);
-Route::get('/admin', [HomeController::class, 'index'])->name('admin');
+
+Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'index'])->name('admin')->middleware('auth');
 Route::get('/admin/service', [ServiceController::class, 'index'])->name('admin.service')->middleware('auth');
 Route::get('/home', [App\Http\Controllers\OutdoorsController::class, 'index'])->name('home');
 Route::get('/about', [App\Http\Controllers\OutdoorsController::class, 'about'])->name('about');
