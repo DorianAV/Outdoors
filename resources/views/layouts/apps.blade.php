@@ -14,7 +14,7 @@
 
     <!-- Title -->
 
-    <title>Home</title>
+    <title>Outdoors</title>
 
 
     <!-- Bootstrap -->

@@ -29,6 +29,8 @@ Auth::routes([
 
 Route::resource('titleSlider', TitleSliderController::class)->middleware('auth')->except('index');
 Route::resource('service', ServiceController::class)->middleware('auth')->except('index');
+Route::resource('homeSection', \App\Http\Controllers\HomeSectionController::class)->middleware('auth')->except('index');
+Route::resource('homeImage', \App\Http\Controllers\HomeImagesController::class)->middleware('auth')->except('index');
 Route::resource('message', MessageController::class);
 
 Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'index'])->name('admin')->middleware('auth');

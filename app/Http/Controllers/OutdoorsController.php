@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HomeImages;
+use App\Models\HomeSection;
 use App\Models\Service;
 use App\Models\TitleSlider;
 use Illuminate\Http\Request;
@@ -12,7 +14,9 @@ class OutdoorsController extends Controller
     {
         $titleSliders = TitleSlider::all();
         $services=Service::all();
-        return view('outdoors.index',compact('services','titleSliders'));
+        $homeSection = HomeSection::first();
+        $images = HomeImages::all();
+        return view('outdoors.index',compact('services','titleSliders','homeSection','images'));
     }
     public function about()
     {
