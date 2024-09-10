@@ -8,51 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Bootstrap -->
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css')}}">
-
-    <!-- Favicon -->
-
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Outdoors2.png')}}">
-
-    <!-- Owl Carousal -->
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.theme.default.min.css')}}">
-
-    <!-- Animate on scroll -->
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/aos.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/odometer.min.css')}}">
-
-    <!-- Fancy Box -->
-
-    <link rel="stylesheet" href="{{ asset('assets/css/jquery.fancybox.min.css')}}">
-
-    <!-- Nice Select -->
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/nice-select.css')}}">
-
-    <!-- Stylesheet -->
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css')}}">
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style-dark.css')}}">
-
-    <!-- Colors -->
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/color.css')}}">
-
-
-    <!-- Responsive -->
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css')}}">
-
-    <!-- Font Awesome 5 -->
-
-    <script src="https://kit.fontawesome.com/27a041baf1.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -60,48 +16,6 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
-
-    <!-- Jquery -->
-
-    <script src="{{ asset('assets/js/jquery.min.js')}}"></script>
-
-
-    <!-- Waypoint -->
-
-    <script src="{{ asset('assets/js/jquery.waypoints.min.js')}}"></script>
-
-
-    <!-- Counter -->
-
-    <script src="{{ asset('assets/js/odometer.min.js')}}"></script>
-
-    <!-- Bootstrap Js -->
-
-    <script src="assets/js/bootstrap.min.js')}}"></script>
-
-    <!-- Fancybox Js -->
-
-    <script src="{{ asset('assets/js/jquery.fancybox.min.js')}}"></script>
-
-    <!-- Nice Select Js -->
-
-    <script src="{{ asset('assets/js/jquery.nice-select.js')}}"></script>
-
-    <!-- Animate on scroll Js -->
-
-    <script src="{{ asset('assets/js/aos.js')}}"></script>
-
-    <!-- Owl Carousal Js -->
-
-    <script src="{{ asset('assets/js/owl.carousel.min.js')}}"></script>
-
-    <!-- Custom Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-
-    <!-- Custom Js -->
-
-    <script src="{{ asset('assets/js/custom.js')}}"></script>
 
 </head>
 <body>
@@ -118,7 +32,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('about') }}">{{ __('About') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.service') }}">{{ __('Services') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('contact') }}">{{ __('Contact') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -41,8 +41,24 @@
                     <h2>Quality & Passion With Contact Form</h2>
                     <p>Have questions or want to chat? Fill out our contact form, and we’ll put you in touch with the
                         right people.</p>
+                    @if(Session::has('message'))
+                        <div class="alert alert-{{ Session::get('type') == 'success' ? 'success' : 'danger' }} alert-dismissible fade show" role="alert">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <strong>{{ Session::get('message') }}</strong>
+                        </div>
+                    @endif
+                    @if(count($errors)>0)
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Error!</strong>
+                            @foreach($errors->all() as $error)
+                                <br>- {{ $error }}
+                            @endforeach
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
                     <form action="{{url('/message')}}" method="POST" enctype="multipart/form-data">
                         @csrf
+                        @honeypot
                         <div class="row g-0">
                             <textarea placeholder="Question / Message?" id="question" name="question"></textarea>
                         </div>
@@ -56,6 +72,16 @@
                         <div class="row g-0">
                             <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                         </div>
+                        @if(config('app.debug')==false)
+                            <div class="form-group mt-1 mb-1">
+                                <label for="captcha"></label>
+                                {!! NoCaptcha::renderJs() !!}
+                                {!! NoCaptcha::display() !!}
+                                @error('g-recaptcha-response')
+                                <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        @endif
 
                         <button type="submit" class="theme-btn">Send Message <i class="fa-solid fa-angles-right"></i>
                         </button>

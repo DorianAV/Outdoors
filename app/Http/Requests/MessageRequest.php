@@ -21,11 +21,18 @@ class MessageRequest extends FormRequest
      */
     public function rules(): array
     {
+        if (config('app.debug') == false){
+            $captcha= ['required', 'captcha'];
+        }else{
+            $captcha=['nullable'];
+        }
+
         return [
             'question' => ['required', 'string', 'max:1000'],
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
             'subject' => ['required', 'string', 'max:255'],
+            'g-recaptcha-response' => $captcha,
         ];
     }
 }

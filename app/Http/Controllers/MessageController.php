@@ -6,6 +6,9 @@ use App\Http\Requests\MessageRequest;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use App\Mail\MessageMail;
+use Illuminate\Support\Facades\Mail;
 
 class MessageController extends Controller
 {
@@ -32,19 +35,23 @@ class MessageController extends Controller
     {
         try {
             DB::beginTransaction();
-
             $datos = $request->validated();
             Message::create($datos);
             DB::commit();
-            return redirect()->route('message.index')->with('success', 'Mensaje enviado correctamente');
+            return redirect()->route('message.index')->with([
+                'message' => 'Message sent successfully',
+                'type' => 'success'
+            ]);
 
         }
         catch (\Exception $e) {
             DB::rollBack();
-            return $e;
-            Log::error('Error al enviar un mensaje: ');
+            Log::error('Error al enviar un mensaje: ', $e->getMessage());
             Log::error($e);
-            return redirect()->back()->withInput()->with('error', 'Error al enviar el mensaje');
+            return redirect()->back()->withInput()->with([
+                'message' => 'An error occurred',
+                'type' => 'error'
+            ]);
         }
     }
 

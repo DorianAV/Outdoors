@@ -3,7 +3,7 @@
 .contact-form-2 .info ul li svg,
 .team-detail .team-data .t-tel .data svg,
 .video-play-btn svg {
-    fill: #b90b30; 
+    fill: #b90b30;
 }
 
 /*Color*/
@@ -134,7 +134,7 @@ button.scrollTopStick.active,
 .certificates .data .extras:before,
 .certificates .c-slider .c-main .c-first,
 .estimated-price .est-form .checkk label,
-.form-control:focus,
+
 .contact-us .c-data ul li a.active img,
 .contact-us .c-data ul li a.active:before,
 .project-completed .prj-slider-nav button,
@@ -157,7 +157,7 @@ textarea:focus-visible,
 .cart-popup .cart-btns a.checkout,
 .cart-popup .cart-btns a:hover,
 .box form input:focus,
-.featured-slider-one .owl-nav button.owl-prev:before, 
+.featured-slider-one .owl-nav button.owl-prev:before,
 .featured-slider-one .owl-nav button.owl-next:before,
 .cart .cart-table .c-c .c-data .cr-svg:hover,
 .first .tab-data .map-pin .location {
