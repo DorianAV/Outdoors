@@ -37,10 +37,9 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="data">
-                    <span>How can we help?</span>
-                    <h2>Quality & Passion With Contact Form</h2>
-                    <p>Have questions or want to chat? Fill out our contact form, and we’ll put you in touch with the
-                        right people.</p>
+                    <span>{{$contact->span}}</span>
+                    <h2>{{$contact->title}}</h2>
+                    <p>{{$contact->description}}</p>
                     @if(Session::has('message'))
                         <div class="alert alert-{{ Session::get('type') == 'success' ? 'success' : 'danger' }} alert-dismissible fade show" role="alert">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -112,7 +111,7 @@
                             </svg>
                             <div>
                                 <h3>Address:</h3>
-                                <p>CONROE TX , USA</p>
+                                <p>{{$contact->address}}</p>
                             </div>
                         </li>
                         <li>
@@ -134,7 +133,7 @@
                             </svg>
                             <div>
                                 <h3>Telephone:</h3>
-                                <p>Tel: +1(936)-514-0208</p>
+                                <p>Tel: {{$contact->phone}}</p>
                             </div>
                         </li>
                         <li>
@@ -156,7 +155,7 @@
                             </svg>
                             <div>
                                 <h3>Email:</h3>
-                                <p>SALES@OUTDOORSJDB.COM</p>
+                                <p>{{$contact->email}}</p>
                             </div>
                         </li>
                     </ul>

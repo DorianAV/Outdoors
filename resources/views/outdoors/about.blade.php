@@ -36,7 +36,7 @@
 <section class="gap about-first">
     <div class="container">
         <div class="row">
-            <h2>Plan your success, we build it.</h2>
+            <h2>{{$about->title}}</h2>
         </div>
     </div>
     <div class="container">
@@ -44,26 +44,23 @@
             <div class="col-lg-6">
                 <div class="who-we-are">
                     <div>
-                        <h3>MISSION</h3>
-                        <p>Provide quality work in a timely and form committed to our clients and their
-                            families wishing to serve and be part of the beginning of a project that will
-                            create unforgettable moments.</p>
+                        <h3>{{$about->subtitle1}}</h3>
+                        <p>{{$about->description1}}</p>
                     </div>
                     <br>
                     <figure>
-                        <img class="w-100" src="{{ asset('assets/images/about1.jpg')}}" alt="About Image One">
+                        <img class="w-100" src="{{asset('storage').'/'.$about->image1}}" alt="About Image One">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1">
                 <div class="who-we-are space">
                     <div>
-                        <h3>VISION</h3>
-                        <p>Continue to earn the trust of our customers, create a company committed to the
-                            family and their needs.</p>
+                        <h3>{{$about->subtitle2}}</h3>
+                        <p>{{$about->description2}}</p>
                     </div>
                     <figure>
-                        <img class="w-100" src="{{ asset('assets/images/about2.png')}}" alt="About Image Two ">
+                        <img class="w-100" src="{{asset('storage').'/'.$about->image2}}" alt="About Image Two ">
                     </figure>
                 </div>
             </div>

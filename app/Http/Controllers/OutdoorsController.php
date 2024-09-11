@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
+use App\Models\Contact;
+use App\Models\HomeDetails;
 use App\Models\HomeImages;
 use App\Models\HomeSection;
 use App\Models\Service;
@@ -13,22 +16,33 @@ class OutdoorsController extends Controller
     public function index()
     {
         $titleSliders = TitleSlider::all();
-        $services=Service::all();
+        $services = Service::all();
         $homeSection = HomeSection::first();
         $images = HomeImages::all();
-        return view('outdoors.index',compact('services','titleSliders','homeSection','images'));
+        $homeDetails = HomeDetails::first();
+        $contact = Contact::first();
+        return view('outdoors.index', compact('services', 'titleSliders', 'homeSection', 'images', 'homeDetails', 'contact'));
     }
+
     public function about()
     {
-        return view('outdoors.about');
+        $about = About::first();
+        $contact = Contact::first();
+
+        return view('outdoors.about', compact('about', 'contact'));
     }
+
     public function contact()
     {
-        return view('outdoors.contact');
+        $contact = Contact::first();
+        return view('outdoors.contact', compact('contact'));
     }
+
     public function services()
     {
-        $services=Service::all();
-        return view('outdoors.services',compact('services'));
+        $contact = Contact::first();
+
+        $services = Service::all();
+        return view('outdoors.services', compact('services', 'contact'));
     }
 }

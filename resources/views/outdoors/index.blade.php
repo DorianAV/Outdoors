@@ -105,7 +105,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="data">
-                                            <h2>WORKING PROCESS</h2>
+                                            <h2>{{$homeDetails->title}}</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -117,14 +117,13 @@
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
-                                        <span class="num">01.</span> ESTIMATE
+                                        <span class="num">01.</span> {{$homeDetails->subtitle1}}
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                      aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>You give us the exact details of what you want to build, we will give you an
-                                            idea of how much it will cost to do it.</p>
+                                        <p>{{$homeDetails->description1}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -133,14 +132,13 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">
-                                        <span class="num">02.</span> QUESTIONS AND CONCERNS
+                                        <span class="num">02.</span> {{$homeDetails->subtitle2}}
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                      data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Let us know your questions, concerns, we will try to be as clear as
-                                            possible.</p></div>
+                                        <p>{{$homeDetails->description2}}</p></div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -148,14 +146,13 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                        <span class="num">03.</span> MAKE A PLAN
+                                        <span class="num">03.</span> {{$homeDetails->subtitle3}}
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                      aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>What day you want to start, schedule and organize our team based on your
-                                            needs</p>
+                                        <p>{{$homeDetails->description3}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -164,15 +161,13 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFour" aria-expanded="false"
                                             aria-controls="collapseFour">
-                                        <span class="num">04.</span> MAKE IT A REALITY
+                                        <span class="num">04.</span> {{$homeDetails->subtitle4}}
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse"
                                      aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>We will work from start to finish, with the hope that in the end your smile
-                                            and that of your loved ones will be the last thing we see when we leave onto
-                                            the next project. </p>
+                                        <p>{{$homeDetails->description4}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +178,7 @@
                     <div class="shape">
                         <div class="video">
                             <figure>
-                                <img src="{{ asset('assets/images/working.jpeg')}}" width="965px" height="825px">
+                                <img src="{{ asset('storage/' . $homeDetails->image) }}" width="965px" height="825px">
                             </figure>
                             <a class="video-play-btn" data-fancybox=""
                                href="https://www.youtube.com/watch?v=uemObN8_dcw">

@@ -1,7 +1,14 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HomeDetailsController;
+use App\Http\Controllers\HomeImagesController;
+use App\Http\Controllers\HomeSectionController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\OutdoorsController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TitleSliderController;
 use Illuminate\Support\Facades\Auth;
@@ -29,16 +36,23 @@ Auth::routes([
 
 Route::resource('titleSlider', TitleSliderController::class)->middleware('auth')->except('index');
 Route::resource('service', ServiceController::class)->middleware('auth')->except('index');
-Route::resource('homeSection', \App\Http\Controllers\HomeSectionController::class)->middleware('auth')->except('index');
-Route::resource('homeImage', \App\Http\Controllers\HomeImagesController::class)->middleware('auth')->except('index');
+Route::resource('homeSection', HomeSectionController::class)->middleware('auth')->except('index');
+Route::resource('homeImage', HomeImagesController::class)->middleware('auth')->except('index');
+Route::resource('homeDetails', HomeDetailsController::class)->middleware('auth')->except('index');
+Route::resource('about', AboutController::class)->middleware('auth')->except('index');
+Route::resource('contact', ContactController::class)->middleware('auth')->except('index');
 Route::resource('message', MessageController::class);
 
-Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'index'])->name('admin')->middleware('auth');
+Route::get('/admin', [AdminController::class, 'index'])->name('admin')->middleware('auth');
 Route::get('/admin/service', [ServiceController::class, 'index'])->name('admin.service')->middleware('auth');
-Route::get('/home', [App\Http\Controllers\OutdoorsController::class, 'index'])->name('home');
-Route::get('/about', [App\Http\Controllers\OutdoorsController::class, 'about'])->name('about');
-Route::get('/contact', [App\Http\Controllers\OutdoorsController::class, 'contact'])->name('contact');
-Route::get('/services', [App\Http\Controllers\OutdoorsController::class, 'services'])->name('services');
+Route::get('/admin/about', [AboutController::class, 'index'])->name('admin.about')->middleware('auth');
+Route::get('/admin/contact', [ContactController::class, 'index'])->name('admin.contact')->middleware('auth');
+
+
+Route::get('/home', [OutdoorsController::class, 'index'])->name('home');
+Route::get('/about', [OutdoorsController::class, 'about'])->name('about');
+Route::get('/contact', [OutdoorsController::class, 'contact'])->name('contact');
+Route::get('/services', [OutdoorsController::class, 'services'])->name('services');
 
 Route::view('/service-detail', 'outdoors.service-detail')->name('service-detail');
 
