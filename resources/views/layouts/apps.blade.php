@@ -17,6 +17,7 @@
     <title>Outdoors</title>
 
 
+
     <!-- Bootstrap -->
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css')}}">
