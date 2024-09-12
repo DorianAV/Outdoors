@@ -2,12 +2,12 @@
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <div class="d-flex">
-                    <form action="" method="get" class="d-flex">
-                        <input type="text" class="form-control me-2" placeholder="Find Services" style="max-width: 200px;" name="busqueda">
+                    <form action="" method="get" class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" placeholder="Find Services" style="max-width: 200px; max-height: 40px;" name="busqueda">
                         <button type="submit" class="btn btn-success">Buscar</button>
                     </form>
                 </div>
-                <a href="{{ route('service.create') }}" class="btn btn-success">Create Service</a>
+                <a href="{{ route('service.create') }}" class="btn btn-warning">Create Service</a>
             </div>
 
 
@@ -41,7 +41,7 @@
                                     </td>
                                     <td class="text-nowrap">
                                         <a href="{{route('service.edit',$service->id)}}"
-                                           class="btn btn-success d-inline-block">Editar</a>
+                                           class="btn btn-warning d-inline-block">Editar</a>
                                         <form action="{{route('service.destroy',$service->id)}}" method="post"
                                               class="d-inline-block">
                                             @csrf

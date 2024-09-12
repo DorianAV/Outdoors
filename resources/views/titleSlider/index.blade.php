@@ -18,7 +18,7 @@
                         <th>Title</th>
                         <th>Subtitle</th>
                         <th>Image</th>
-                        <th>Acciones</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -32,7 +32,7 @@
                             </td>
                             <td class="text-nowrap">
                                 <a href="{{route('titleSlider.edit',$titleSlider->id)}}"
-                                   class="btn btn-warning d-inline-block">Editar</a>
+                                   class="btn btn-warning d-inline-block">Edit</a>
                             </td>
                         </tr>
                     @endforeach

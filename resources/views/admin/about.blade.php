@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
     <div class="card">
-        <div class="card-header d-flex justify-content-between">
+        <div class="card-header d-flex justify-content-between align-items-center">
             <h1 class="card-title">About</h1>
-            <a href="{{ route('about.edit',1) }}" class="btn btn-success">Edit</a>
+            <a href="{{ route('about.edit',1) }}" class="btn btn-warning">Edit</a>
         </div>
         <div class="class-body">
             <div class="row">

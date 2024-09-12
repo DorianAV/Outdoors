@@ -63,8 +63,8 @@
                         <input type="file" class="form-control" id="image2" name="image2" accept="image/*">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Create</button>
-                    <a href="{{route('admin')}}" class="btn btn-success">Back</a>
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <a href="{{route('admin')}}" class="btn btn-primary">Back</a>
                 </div>
 
             </div>

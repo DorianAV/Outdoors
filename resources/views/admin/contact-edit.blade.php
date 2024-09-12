@@ -4,7 +4,6 @@
         <form action="{{route('contact.update',1)}}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PATCH')
-
             @if(count($errors)>0)
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <strong>Errors!</strong>
@@ -54,11 +53,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Save Changes</button>
-                    <a href="{{route('admin')}}" class="btn btn-success">Back</a>
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                    <a href="{{route('admin')}}" class="btn btn-primary">Back</a>
                 </div>
-
             </div>
         </form>
     </div>

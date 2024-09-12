@@ -14,7 +14,7 @@
 
     <!-- Title -->
 
-    <title>Outdoors</title>
+    <title>Outdoor</title>
 
 
 

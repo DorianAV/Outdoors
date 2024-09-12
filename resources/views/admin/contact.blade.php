@@ -2,9 +2,9 @@
 @section('content')
 
     <div class="card">
-        <div class="card-header d-flex justify-content-between">
+        <div class="card-header d-flex justify-content-between align-items-center">
             <h1 class="card-title">Contact</h1>
-            <a href="{{ route('contact.edit',1) }}" class="btn btn-success">Edit</a>
+            <a href="{{ route('contact.edit',1) }}" class="btn btn-warning">Edit</a>
         </div>
         <div class="card-body">
             <div class="row">

@@ -5,9 +5,10 @@
     @include('titleSlider.index')
     <br>
     <div class="card">
-        <div class="card-header d-flex justify-content-between">
-            <h1 class="card-title">Titles</h1>
-            <a href="{{ route('homeSection.edit',$homeSection->id) }}" class="btn btn-success">Edit</a>
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="d-flex"><h1 class="card-title">Home Section</h1>
+            </div>
+            <a href="{{ route('homeSection.edit',$homeSection->id) }}" class="btn btn-warning">Edit</a>
 
         </div>
         <div class="class-body">
@@ -45,7 +46,7 @@
 
     <br>
     <div class="card">
-        <div class="card-header d-flex justify-content-between">
+        <div class="card-header d-flex justify-content-between align-items-center">
             <h1 class="card-title">Projects Completed</h1>
             <a href="{{ route('homeImage.create') }}" class="btn btn-success">Create</a>
 
@@ -58,7 +59,7 @@
                             <img src="{{ asset('storage/' . $image->image) }}" class="card-img-top img-fluid"
                                  alt="Image" style="max-height: 200px; object-fit: cover;">
                             <div class="card-body d-flex justify-content-between">
-                                <a href="{{route('homeImage.edit',$image->id)}}" class="btn btn-primary">Edit</a>
+                                <a href="{{route('homeImage.edit',$image->id)}}" class="btn btn-warning">Edit</a>
                                 <form action="{{route('homeImage.destroy',$image->id)}}" method="POST">
                                     @csrf
                                     @method('DELETE')
@@ -75,7 +76,7 @@
 
 
     <div class="card">
-        <div class="card-header d-flex justify-content-between">
+        <div class="card-header d-flex justify-content-between align-items-center">
             <h1 class="card-title">Projects Completed</h1>
             <a href="{{ route('homeDetails.edit',$homeDetails->id) }}" class="btn btn-success">Edit</a>
         </div>

@@ -63,11 +63,11 @@ class AboutController extends Controller
             $data = $request->validated();
             if ($request->hasFile('image1')) {
                 Storage::delete('public/' . $about->image1);
-                $data['image1'] = $request->file('image1')->store('images', 'public');
+                $data['image1'] = $request->file('image1')->store('uploads', 'public');
             }
             if ($request->hasFile('image2')) {
                 Storage::delete('public/' . $about->image2);
-                $data['image2'] = $request->file('image2')->store('images', 'public');
+                $data['image2'] = $request->file('image2')->store('uploads', 'public');
             }
             $about->update($data);
             DB::commit();
