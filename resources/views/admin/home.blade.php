@@ -78,7 +78,7 @@
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h1 class="card-title">Projects Completed</h1>
-            <a href="{{ route('homeDetails.edit',$homeDetails->id) }}" class="btn btn-success">Edit</a>
+            <a href="{{ route('homeDetails.edit',$homeDetails->id) }}" class="btn btn-warning">Edit</a>
         </div>
         <div class="class-body">
             <div class="row">

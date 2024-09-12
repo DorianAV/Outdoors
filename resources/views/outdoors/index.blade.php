@@ -181,7 +181,7 @@
                                 <img src="{{ asset('storage/' . $homeDetails->image) }}" width="965px" height="825px">
                             </figure>
                             <a class="video-play-btn" data-fancybox=""
-                               href="https://www.youtube.com/watch?v=uemObN8_dcw">
+                               href="{{$homeDetails->videoUrl}}">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="35" height="56" viewBox="0 0 35 56">
                                     <defs>

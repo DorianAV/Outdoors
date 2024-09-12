@@ -77,7 +77,7 @@
                         <input type="text" class="form-control" id="videoUrl" name="videoUrl" value="{{isset($homeDetails->videoUrl)?$homeDetails->videoUrl:old('videoUrl')}}">
                     </div>
 
-                    <button type="submit" class="btn btn-success">Create</button>
+                    <button type="submit" class="btn btn-success">Save</button>
                     <a href="{{route('admin')}}" class="btn btn-primary">Back</a>
                 </div>
 
