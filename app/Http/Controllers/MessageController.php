@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\MessageRequest;
+use App\Models\Contact;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -17,7 +18,9 @@ class MessageController extends Controller
      */
     public function index()
     {
-        return view('outdoors.contact');
+        $contact=Contact::first();
+
+        return view('outdoors.contact',compact('contact'));
     }
 
     /**
@@ -38,6 +41,7 @@ class MessageController extends Controller
             $datos = $request->validated();
             Message::create($datos);
             DB::commit();
+
             return redirect()->route('message.index')->with([
                 'message' => 'Message sent successfully',
                 'type' => 'success'
