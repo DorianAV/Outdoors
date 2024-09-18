@@ -516,5 +516,5 @@ jQuery(document).ready(function ($) {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         document.body.classList.add('page-loaded');
-    }, 100); // 1000 milisegundos = 1 segundo
+    }, 100);
 });
