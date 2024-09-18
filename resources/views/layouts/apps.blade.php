@@ -132,7 +132,7 @@
                                 <div class="header-logo">
                                     <a href="{{route('home')}}">
                                         <figure>
-                                            <img src="{{ asset('assets/images/Outdoors.png')}}" width="150px" alt="logoo">
+                                            <img src="{{ asset('assets/images/CONROEOUTDOOR.png')}}" height="100" alt="logoo">
                                         </figure>
                                     </a>
                                 </div>
@@ -186,7 +186,7 @@
             <div class="mobile-nav" id="mobile-nav">
                 <div class="res-log">
                     <a href="{{route('home')}}">
-                        <img src="{{ asset('assets/images/Outdoors.png')}}" width="200px" height="120px" alt="Responsive Logo">
+                        <img src="{{ asset('assets/images/CONROEOUTDOOR.png')}}" height="70" alt="Responsive Logo">
                     </a>
                 </div>
                 <ul>
@@ -232,7 +232,7 @@
                 <div class="footer-first">
                     <div class="footer-logo">
                         <a href="{{route('home')}}">
-                            <img src="{{ asset('assets/images/Outdoors.png')}}" alt="logo" width="100" height="50">
+                            <img src="{{ asset('assets/images/CONROEOUTDOOR.png')}}" alt="logo" height="70">
                         </a>
                     </div>
                     <div class="contact-info d-flex-all">

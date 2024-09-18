@@ -166,7 +166,7 @@
                     </ul>
                     <ul class="social-medias">
                         <li>
-                            <a class="fb" href="javascript:void(0)">
+                            <a class="fb" href="https://www.facebook.com/share/CLMLHdHo5ZuAc5ka/?mibextid=LQQJ4d">
                                 <p>Facebook</p>
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
