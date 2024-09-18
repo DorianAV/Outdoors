@@ -130,6 +130,7 @@
                                                                     <li><strong>Name:</strong> {{$name}}</li>
                                                                     <li><strong>Question:</strong> {{$question}}</li>
                                                                     <li><strong>Email:</strong> {{$email}}</li>
+                                                                    <li><strong>Phone:</strong> {{$phone}}</li>
                                                                 </ul>
                                                                 <p class="text-justify mb-3"> Here is the information from the contact request. Please try to reach out to the user to follow up on their inquiry. </p>
                                                                 <p> Best regards, </p>
@@ -156,7 +157,7 @@
                     <tbody>
                     <tr style="text-align: center; margin: 15px 0;">
                         <td style="width: 33%; text-align: center; vertical-align: middle; padding: 10px;">
-                            <a href="https://www.facebook.com/profile.php?id=61563510873741"
+                            <a href="https://www.facebook.com/share/CLMLHdHo5ZuAc5ka/?mibextid=LQQJ4d"
                                style="color: white; text-decoration: none;">
                                 <img
                                     src="https://eonyaow.stripocdn.email/content/assets/img/social-icons/logo-gray/facebook-logo-gray.png"
@@ -164,22 +165,14 @@
                                 <p style="margin: 5px 0 0 0;">Facebook</p>
                             </a>
                         </td>
-                        <td style="width: 33%; text-align: center; vertical-align: middle; padding: 10px;">
-                            <a href="https://www.instagram.com/mitejupilco/"
-                               style="color: white; text-decoration: none;">
-                                <img
-                                    src="https://eonyaow.stripocdn.email/content/assets/img/social-icons/logo-gray/instagram-logo-gray.png"
-                                    width="25px" height="25px" style="display: block; margin: 0 auto;">
-                                <p style="margin: 5px 0 0 0;">Instagram</p>
-                            </a>
-                        </td>
+
                         <td style="width: 33%; text-align: center; vertical-align: middle; padding: 10px;">
 
-                            <a href="https://www.youtube.com/@MiTejupilco" style="color: white; text-decoration: none;">
+                            <a href="https://conroeoutdoorconstruction.com/" style="color: white; text-decoration: none;">
                                 <img
-                                    src="https://eonyaow.stripocdn.email/content/assets/img/social-icons/logo-gray/youtube-logo-gray.png"
+                                    src="{{asset('assets/images/chrome.png')}}"
                                     width="25px" height="25px" style="display: block; margin: 0 auto;">
-                                <p style="margin: 5px 0 0 0;">YouTube</p>
+                                <p style="margin: 5px 0 0 0;">WebSite</p>
                             </a>
                         </td>
                     </tr>

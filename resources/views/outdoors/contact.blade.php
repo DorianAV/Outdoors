@@ -59,17 +59,22 @@
                         @csrf
                         @honeypot
                         <div class="row g-0">
-                            <textarea placeholder="Question / Message?" id="question" name="question" class="form-control"> </textarea>
+                            <textarea placeholder="Question / Message?" id="question" name="question" class="form-control">{{isset($message->question)?$message->question:old('question')}}</textarea>
                         </div>
                         <div class="row g-0">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Complete Name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Complete Name" value="{{isset($message->name)?$message->name:old('name')}}">
                         </div>
+                        <div class="row g-0">
+                            <input type="tel" class="form-control" id="phone"
+                                   placeholder="Phone Number" name="phone" value="{{isset($message->phone)?$message->phone:old('phone')}}">
+                        </div>
+
                         <div class="row g-0">
                             <input type="email" class="form-control" id="email"
-                                   placeholder="Email Address" name="email" >
+                                   placeholder="Email Address" name="email" value="{{isset($message->email)?$message->email:old('email')}}">
                         </div>
                         <div class="row g-0">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" value="{{isset($message->subject)?$message->subject:old('subject')}}">
                         </div>
                         @if(config('app.debug')==false)
                             <div class="form-group mt-1 mb-1">

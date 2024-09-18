@@ -17,7 +17,6 @@
     <title>Outdoor</title>
 
 
-
     <!-- Bootstrap -->
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css')}}">
@@ -61,7 +60,6 @@
 
     <!-- Font Awesome 5 -->
 
-    <script src="https://kit.fontawesome.com/27a041baf1.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -110,6 +108,7 @@
     <script src="{{ asset('assets/js/custom.js')}}"></script>
 
 
+
 </head>
 
 <body>
@@ -133,7 +132,7 @@
                                 <div class="header-logo">
                                     <a href="{{route('home')}}">
                                         <figure>
-                                            <img src="{{ asset('assets/images/Outdoors.png')}}" width="200px" height="120px" alt="logoo">
+                                            <img src="{{ asset('assets/images/Outdoors.png')}}" width="150px" alt="logoo">
                                         </figure>
                                     </a>
                                 </div>
@@ -288,7 +287,8 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <p>OUTDOORSJDB.COM<i class="fa-solid fa-heart"></i> © 2024 All rights reserved</p>
+                    <p>CONROEOUTDOORCONSTRUCTION.COM
+                        <i class="fa-solid fa-heart"></i> © 2024 All rights reserved</p>
                     <div class="social-medias">
                         <a href="javascript:void(0)">Facebook</a>
                     </div>

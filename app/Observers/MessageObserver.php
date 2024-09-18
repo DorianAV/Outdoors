@@ -13,7 +13,7 @@ class MessageObserver
     public function created(Message $message): void
     {
         //poner despues sales@conroeoutdoorconstruction.com
-        Mail::to('destinatario@example.com')->send(new MessageMail($message->question,$message->name,$message->email,$message->subject, ));
+        Mail::to('sales@conroeoutdoorconstruction.com')->send(new MessageMail($message->question,$message->name,$message->phone,$message->email,$message->subject, ));
     }
 
     /**

@@ -21,9 +21,9 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         \App\Models\User::factory()->create([
-            'name' => 'Dorian Cinue',
-            'email' => 'doriancinue26@gmail.com',
-            'password' => bcrypt('12345678'),
+            'name' => 'Outdoors Admin',
+            'email' => 'admin@conroeoutdoorconstruction.com',
+            'password' => bcrypt('Y93qQodN'),
         ]);
 
         \App\Models\About::create([
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Have questions or want to chat? Fill out our contact form, and we’ll put you in touch with the right people.',
             'address' => 'CONROE TX , USA',
             'phone' => '+1(936)-514-0208',
-            'email' => 'SALES@OUTDOORSJDB.COM',
+            'email' => 'sales@conroeoutdoorconstruction.com',
         ]);
 
         HomeDetails::create([
@@ -67,6 +67,42 @@ class DatabaseSeeder extends Seeder
         HomeImages::create(['image' => 'uploads/project6.jpeg']);
         HomeImages::create(['image' => 'uploads/project7.jpeg']);
         HomeImages::create(['image' => 'uploads/project8.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00001.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00002.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00003.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00004.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00005.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00006.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00007.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00008.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00009.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00010.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00011.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00012.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00013.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00014.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00015.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00016.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00017.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00018.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00019.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00020.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00021.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00022.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00023.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00024.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00025.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00026.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00027.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00028.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00029.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00030.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00031.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00032.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00033.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00034.jpeg']);
+        HomeImages::create(['image' => 'uploads/image00035.jpeg']);
+
 
 
         HomeSection::create([
@@ -78,79 +114,79 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Service::create([
-            'title' => 'New Construction Additions',
+            'title' => 'NEW CONSTRUCTION ADDITIONS',
             'description' => 'Do you need extra space? a room or simply make some changes so that the space you enjoy so much becomes perfect? Do you need a place to store your tools? Tell us what needs to be added, modified or created... together we can do it.',
             'image' => 'uploads/house_light.png',
         ]);
 
         Service::create([
-            'title' => 'Roofing',
+            'title' => 'ROOFING',
             'description' => 'The roof is one of the main and most important structures of your home, take action and protect your assets, if it is time to replace the roof of your home, or make a repair... count on us.',
             'image' => 'uploads/roofing_light.png',
         ]);
 
         Service::create([
-            'title' => 'Painting',
+            'title' => 'PAINTING',
             'description' => 'You need to make some changes, a fresher color... a combination or a new design came to your mind and you are ready to carry it out, we can give that change to your house or project.',
             'image' => 'uploads/paiting_light.png',
         ]);
 
         Service::create([
-            'title' => 'Deck',
+            'title' => 'DECK',
             'description' => 'Do you need a deck next to your house, a space where you can sit and relax or eat, be with your friends and enjoy pleasant moments? Let us help you make your intentions come true.',
             'image' => 'uploads/deck_light.png',
         ]);
 
         Service::create([
-            'title' => 'Gazebos',
+            'title' => 'GAZEBOS',
             'description' => 'A gazebo is a freestanding, open garden structure, sometimes with a specific design, with a roof. Most gazebos are constructed of wood or metal and have built-in seating inside the sheltered area.',
             'image' => 'uploads/gazebo_light.png',
         ]);
 
         Service::create([
-            'title' => 'Patio Cover',
+            'title' => 'PATIO COVER',
             'description' => 'Whether providing shade or protection from rain, a patio structure is an element that makes your outdoor space livable, no matter the weather. These moments can last as long as necessary.',
             'image' => 'uploads/patio_light.png',
         ]);
 
         Service::create([
-            'title' => 'Arbors',
+            'title' => 'ARBORS',
             'description' => 'One of the favorites of landscaping lovers is a garden alcove with shade, sides and a roof made up of trees or climbing plants on a wooden framework.',
             'image' => 'uploads/arbors_light.png',
         ]);
 
         Service::create([
-            'title' => 'Outdoor Kitchen',
+            'title' => 'OUTDOOR KITCHEN',
             'description' => 'For lovers of outdoor cooking, who enjoy preparing the favorites of their family and friends, without missing a moment of fun, an outdoor kitchen will allow you to pamper yourself and your loved ones.',
             'image' => 'uploads/outdoors_kitchen_light.png',
         ]);
 
         Service::create([
-            'title' => 'Window and/or Door New Installation',
+            'title' => 'WINDOW AND/OR DOOR NEW INSTALLATION',
             'description' => 'Enhance your home\'s security and style with our professional window and door installation, tailored to your needs.',
             'image' => 'uploads/window.png',
         ]);
 
         Service::create([
-            'title' => 'Bulkhead Repairs',
+            'title' => 'BULKHEAD REPAIRS',
             'description' => 'Restore your property with our bulkhead repair services. We address leaks, cracks, and structural issues to ensure long-lasting durability and prevent future problems.',
             'image' => 'uploads/bulkhead.png',
         ]);
 
         Service::create([
-            'title' => 'Power Washing',
+            'title' => 'POWER WASHING',
             'description' => 'Revitalize your home’s exterior with our power washing service. Remove dirt, grime, and stains to restore the fresh and clean appearance of driveways, decks, and siding.',
             'image' => 'uploads/washing.png',
         ]);
 
         Service::create([
-            'title' => 'Gutter Cleaning',
+            'title' => 'GUTTER CLEANING',
             'description' => 'Protect your home from water damage with our thorough gutter cleaning service. We clear debris and blockages to keep your gutters functioning properly and prevent overflow.',
             'image' => 'uploads/gutter.png',
         ]);
 
         Service::create([
-            'title' => 'New Fence and Repairs',
+            'title' => 'NEW FENCE AND REPAIRS',
             'description' => 'Enhance your property with our new fence installation and repair services. We offer durable and stylish fencing solutions to boost both security and curb appeal.',
             'image' => 'uploads/fence.png',
         ]);

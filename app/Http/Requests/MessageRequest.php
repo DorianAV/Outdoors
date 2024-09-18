@@ -30,6 +30,7 @@ class MessageRequest extends FormRequest
         return [
             'question' => ['required', 'string', 'max:1000'],
             'name' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'regex:/^\+?\d{1,3}?[-.\s]?(\(?\d{1,4}\)?)[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/'],
             'email' => ['required', 'string', 'email', 'max:255'],
             'subject' => ['required', 'string', 'max:255'],
             'g-recaptcha-response' => $captcha,

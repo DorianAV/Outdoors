@@ -16,10 +16,11 @@ class MessageMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($question=null,$name=null,$email=null,$subject=null)
+    public function __construct($question=null,$name=null,$phone=null,$email=null,$subject=null)
     {
         $this->question=$question;
         $this->name=$name;
+        $this->phone=$phone;
         $this->email=$email;
         $this->subject=$subject;
     }
@@ -45,6 +46,7 @@ class MessageMail extends Mailable
             with: [
                 'question' => $this->question,
                 'name' => $this->name,
+                'phone' => $this->phone,
                 'email' => $this->email,
                 'subject' => $this->subject,
             ]
