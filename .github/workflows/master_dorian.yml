@@ -69,6 +69,3 @@ jobs:
           app-name: 'dorian'
           package: ./app
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_58199B459B8543129DF78EC76658F563 }}
-
-          package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_58199B459B8543129DF78EC76658F563 }}
